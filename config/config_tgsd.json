@@ -1,0 +1,39 @@
+{
+    "model_config": {
+        "n_channels": 62,
+        "super_resolution_factor": 2,
+        "channel_layout_case": 1,
+        "n_obs_channels": 31,
+        "seq_len": 800,
+        "hidden_dim": 64,
+        "num_layers": 12,
+        "num_ssm": 2,
+        "diffusion_embedding_dim": 128,
+        "d_state": 16,
+        "expand": 2,
+        "k_neighbors": 8,
+        "tau": 1.0,
+        "dropout": 0.1
+    },
+    "diffusion_config": {
+        "T": 1000,
+        "beta_0": 0.0001,
+        "beta_T": 0.02
+    },
+    "trainset_config": {
+        "train_data_path": "data/seed_subject1_train.npy",
+        "test_data_path": "data/seed_subject1_test.npy"
+    },
+    "train_config": {
+        "output_directory": "checkpoints",
+        "n_iters": 100000,
+        "iters_per_ckpt": 10000,
+        "iters_per_logging": 100,
+        "learning_rate": 0.0001,
+        "batch_size": 8
+    },
+    "gen_config": {
+        "output_directory": "results",
+        "batch_size": 8
+    }
+}
