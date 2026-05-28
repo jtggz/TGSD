@@ -1,5 +1,5 @@
 # TGSD
-The official implementation of TGSD: Topology-Guided State-Space Diffusion for EEG Spatial Super-Resolution
+The official implementation of TGSD: Topology-Guided State-Space Diffusion Framework for EEG Spatial Super-Resolution
 
   <p align="center">
     <a href="[https://arxiv.org/abs/2412.17337](https://arxiv.org/abs/2502.21154)">
